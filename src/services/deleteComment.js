@@ -6,7 +6,7 @@ async function deleteComment({ commentId, headers, slug }) {
     const { data } = await axios({
       headers,
       method: "DELETE",
-      url: `api/articles/${slug}/comments/${commentId}`,
+      url: `https://new-deployment-project.onrender.com/api/articles/${slug}/comments/${commentId}`,
     });
 
     return data;

@@ -7,7 +7,7 @@ async function userUpdate({ headers, bio, email, image, password, username }) {
       data: { user: { bio, email, image, password, username } },
       headers,
       method: "PUT",
-      url: "api/user",
+      url: "https://new-deployment-project.onrender.com/api/user",
     });
 
     const { user } = data;

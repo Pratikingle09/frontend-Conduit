@@ -6,7 +6,7 @@ async function toggleFav({ slug, favorited, headers }) {
     const { data } = await axios({
       headers,
       method: favorited ? "DELETE" : "POST",
-      url: `api/articles/${slug}/favorite`,
+      url: `https://new-deployment-project.onrender.com/api/articles/${slug}/favorite`,
     });
 
     return data.article;

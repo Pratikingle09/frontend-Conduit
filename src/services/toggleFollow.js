@@ -6,7 +6,7 @@ async function toggleFollow({ following, headers, username }) {
     const { data } = await axios({
       headers,
       method: following ? "DELETE" : "POST",
-      url: `api/profiles/${username}/follow`,
+      url: `https://new-deployment-project.onrender.com/api/profiles/${username}/follow`,
     });
 
     return data.profile;

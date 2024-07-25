@@ -7,7 +7,7 @@ async function setArticle({ body, description, headers, slug, tagList, title }) 
       data: { article: { title, description, body, tagList } },
       headers,
       method: slug ? "PUT" : "POST",
-      url: slug ? `api/articles/${slug}` : "api/articles",
+      url: slug ? `https://new-deployment-project.onrender.com/api/articles/${slug}` : "https://new-deployment-project.onrender.com/api/articles",
     });
 
     return data.article.slug;
