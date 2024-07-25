@@ -7,7 +7,7 @@ export default defineConfig({
     port: 10000,
     proxy: {
       '/api': {
-        target:  'https://new-deployment-project.onrender.com', // Use your deployed backend URL
+        target:  'https://new-deployment-project.onrender.com/', // Use your deployed backend URL
         changeOrigin: true,
         secure: true, // Set to true if your backend uses HTTPS
       }
